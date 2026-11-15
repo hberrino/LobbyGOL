@@ -1,1 +1,16 @@
-{"name":"@lobbygol/server","version":"0.1.0","private":true,"type":"module","scripts":{"dev":"node --watch --env-file-if-exists=.env src/index.js","start":"node --env-file-if-exists=.env src/index.js"},"dependencies":{"express":"^5.1.0","mysql2":"^3.14.0"}}
+{
+  "name": "@lobbygol/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --env-file-if-exists=.env src/index.js",
+    "start": "node --env-file-if-exists=.env src/index.js",
+    "db:init": "node --env-file-if-exists=.env src/schema.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.14.0"
+  }
+}
